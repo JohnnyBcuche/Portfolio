@@ -1,0 +1,135 @@
+%page-properties {
+	min-height: 100vh;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+%button-properties {
+	background: none;
+	border: 2px solid;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 20px 40px;
+	border-radius: 4px;
+	color: var(--color);
+	transition: 0.25s;
+
+	&:hover,
+	&:focus { 
+		border-color: var(--hover);
+		color: #C83737;
+	}
+}
+
+$colors: (
+  fill: #fff,
+  pulse: #C83737, 
+  raise: #032529
+);
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 15deg)};
+  }
+}
+
+.backImg {
+	background-image: url(../../img/workspace.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-top: 100px;
+	min-height: 85vh;
+	@extend %page-properties;
+	.raise {
+		display: inline-block;
+		@extend %button-properties;
+		&:hover,
+		&:focus {
+			color: #032529;
+		}
+	}
+	.raise:hover,
+	.raise:focus {
+	  box-shadow: 0 8px 8px -6px var(--hover);
+	  transform: translateY(-4px);
+	}
+}
+.about {
+	@extend %page-properties;
+	.pulse{
+		@extend %button-properties;
+	}
+	.pulse:hover, 
+	.pulse:focus {
+	  animation: pulse 1s;
+	  box-shadow: 0 0 0 32px rgba(#fff,0);
+	}
+
+	@keyframes pulse {
+	  0% { box-shadow: 0 0 0 0 var(--hover); }
+	}
+}
+.myWork {
+	@extend %page-properties;
+	padding-bottom: 100px;
+	.fill {
+		@extend %button-properties;
+	}
+	.fill:hover,
+	.fill:focus {
+	  box-shadow: inset 0 0 0 32px var(--hover);
+	}
+}
+.contact-page {
+	@extend %page-properties;
+}
+
+@media screen and (max-width:767px) {
+%buttons-mdl {
+	font-weight: 400;
+	padding: 12px 24px;
+}
+	.backImg {
+		min-height: 65vh;
+		padding-top: 80px;
+		.raise {
+			@extend %buttons-mdl;
+		}
+	}
+	.about {
+		.pulse {
+			@extend %buttons-mdl;
+		}
+	}
+	.myWork {
+		.fill {
+			@extend %buttons-mdl;
+		}
+	}
+}
+
+@media screen and (max-width:480px) {
+%buttons-sml {
+	font-weight: 400;
+	padding: 10px 20px;
+}
+	.backImg {
+		min-height: 60vh;
+		padding-top: 50px;
+		.raise {
+			@extend %buttons-sml;
+		}
+	}
+	.about {
+		.pulse {
+			@extend %buttons-sml;
+		}
+	}
+	.myWork {
+		.fill {
+			@extend %buttons-sml;
+		}
+	}
+}

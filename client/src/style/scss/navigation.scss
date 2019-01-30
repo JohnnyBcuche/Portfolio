@@ -1,0 +1,111 @@
+$black: #032529;
+$white: #fff;
+$red: #C83737;
+
+input[type=checkbox], .show-menu{
+	display: none;
+	color: $black;
+}
+.navigation{
+	background-color: $red;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 40px;
+	max-width: 100%;
+    min-height: 100px;
+    position: relative;
+	overflow: auto;
+	h2{
+		margin: 0;
+		padding-right: 40px;
+		font-size: 30px;
+		color: $white;
+		max-width: 30%;
+		float: right;
+		left: 70%;
+		p{
+			margin: 0;
+			padding: 25px 0 0 0;
+		}
+	}
+	li a{
+		display: flex;
+		color: $white;
+		float: left;
+		margin: 0;
+	    padding: 32px 15px;
+		text-decoration: none;
+		max-width: 70%;
+		font-size: 20px;
+		p{
+			margin: 0;
+			padding: 0;
+		}
+		:hover{
+			color: #000;
+			animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			transform: translate3d(0, 0, 0);
+		}
+		@keyframes shake {
+			10%, 90% {
+			transform: translate3d(-1px, 0, 0);
+			}
+
+			20%, 80% {
+			transform: translate3d(2px, 0, 0);
+			}
+
+			30%, 50%, 70% {
+			transform: translate3d(-4px, 0, 0);
+			}
+
+			40%, 60% {
+			transform: translate3d(4px, 0, 0);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:767px){
+	%menu-links{
+		background-color: $red;
+		color: $white;
+		display: flex;
+		cursor: pointer;
+		padding: 15px 0;
+		font-size: 15px;
+		justify-content: center;
+		align-items: center;
+		min-width: 100%;
+		border-bottom: 1px solid $white;
+	}
+	input[type=checkbox]:checked ~ .navigation{
+		display:block;
+	}
+	.navigation{
+		display: none;
+		height: auto;
+		padding: 0;
+		h2{
+			display: none;
+		}
+		li a{
+			@extend %menu-links;
+		}
+	}
+	.show-menu{
+		@extend %menu-links;
+		background-color: #a02c2c;
+		color: $black;
+		p{
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width:480px){
+	.show-menu, .navigation li a{
+		font-size: 13px;
+		padding: 13px 0;
+	}
+}
