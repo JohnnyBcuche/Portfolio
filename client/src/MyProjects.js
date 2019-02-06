@@ -59,7 +59,7 @@ const iconObj = [
 	{
 		icon: <i class="fas fa-code"></i>,
 		title: 'Programming Languages',
-		description: 'Programming languages that i learned or have some experience worked in: JavaScript, HTML, CSS, PHP, C#, MySQL'
+		description: 'Programming languages that I learned and have some experience worked in: JavaScript, HTML, CSS, PHP, C#, MySQL'
 	}
 ];
 
