@@ -27,19 +27,20 @@
   --hover: #c85b37; }
 
 .raise {
-  --color: #032529;
-  --hover: #031c29; }
+  --color: #fff;
+  --hover: white; }
 
 .backImg {
-  background-image: url(../../img/workspace.jpg);
+  background-image: url(../../img/developer.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 100px;
   min-height: 85vh; }
   .backImg .raise {
-    display: inline-block; }
+    display: inline-block;
+    background-color: rgba(200, 55, 55, 0.5); }
     .backImg .raise:hover, .backImg .raise:focus {
-      color: #032529; }
+      color: #fff; }
   .backImg .raise:hover,
   .backImg .raise:focus {
     box-shadow: 0 8px 8px -6px var(--hover);
@@ -60,19 +61,17 @@
 
 @media screen and (max-width: 767px) {
   .backImg .raise, .about .pulse, .myWork .fill {
-    font-weight: 400;
+    font-weight: 500;
     padding: 12px 24px; }
 
   .backImg {
-    min-height: 65vh;
-    padding-top: 80px; } }
+    min-height: 78vh; } }
 @media screen and (max-width: 480px) {
   .backImg .raise, .about .pulse, .myWork .fill {
-    font-weight: 400;
+    font-weight: 450;
     padding: 10px 20px; }
 
   .backImg {
-    min-height: 60vh;
-    padding-top: 50px; } }
+    min-height: 83vh; } }
 
 /*# sourceMappingURL=universal.css.map */

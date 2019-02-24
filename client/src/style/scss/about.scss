@@ -25,11 +25,8 @@ $red: #C83737;
 }
 
 @media screen and (max-width:767px) {
-	.about {
-		min-height: 80vh;
-	}
 	.aboutMe {
-		padding: 20px 40px;
+		padding: 40px 80px;
 		h1 {
 			font-size: 22px;
 			padding-bottom: 20px;
@@ -45,6 +42,7 @@ $red: #C83737;
 @media screen and (max-width:480px) {
 	.aboutMe {
 		padding: 15px 25px;
+		font-size: 14px;
 		font-weight: 300;
 	    line-height: 1.2;
 	}

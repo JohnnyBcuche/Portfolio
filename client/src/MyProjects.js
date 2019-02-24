@@ -13,6 +13,7 @@ class MyWork extends Component{
 					<Projects projectTitle={projectLinks[0].title} projectIcon={projectLinks[0].icon} projectDescription={projectLinks[0].description} projectLink={projectLinks[0].link} projectLinkTitle={projectLinks[0].linkTitle} />
 					<Projects projectTitle={projectLinks[1].title} projectIcon={projectLinks[1].icon} projectDescription={projectLinks[1].description} projectLink={projectLinks[1].link} projectLinkTitle={projectLinks[1].linkTitle} />
 					<Projects projectTitle={projectLinks[2].title} projectIcon={projectLinks[2].icon} projectDescription={projectLinks[2].description} projectLink={projectLinks[2].link} projectLinkTitle={projectLinks[2].linkTitle} />
+					<Projects projectTitle={projectLinks[3].title} projectIcon={projectLinks[3].icon} projectDescription={projectLinks[3].description} projectLink={projectLinks[3].link} projectLinkTitle={projectLinks[3].linkTitle} />
 				</div>
 				
 				<div className="skills">
@@ -46,6 +47,13 @@ const projectLinks = [
 		icon: <i class="fab fa-react"></i>,
 		description: 'My portfolio code (this page).',
 		link: 'https://github.com/JohnnyBcuche/portfolio',
+		linkTitle: 'GitHub link'
+	},
+	{
+		title: 'Health Care',
+		icon: <i class="fas fa-briefcase-medical"></i>,
+		description: 'One-page website for health care.',
+		link: 'https://github.com/JohnnyBcuche/Health-Care',
 		linkTitle: 'GitHub link'
 	}
 ];

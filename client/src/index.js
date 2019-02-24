@@ -8,7 +8,7 @@ class App extends Component{
 	render(){
 		return(
 			<div>
-				<Navigation logoTitle="Ivan Kis" />	
+				<Navigation logoTitle="Ivan Kiš" />	
 			</div>
 		);
 	}

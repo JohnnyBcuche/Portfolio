@@ -25,7 +25,7 @@
 $colors: (
   fill: #fff,
   pulse: #C83737, 
-  raise: #032529
+  raise: #fff
 );
 
 @each $button, $color in $colors {
@@ -36,7 +36,7 @@ $colors: (
 }
 
 .backImg {
-	background-image: url(../../img/workspace.jpg);
+	background-image: url(../../img/developer.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding-top: 100px;
@@ -44,10 +44,11 @@ $colors: (
 	@extend %page-properties;
 	.raise {
 		display: inline-block;
+		background-color: rgba(200, 55, 55, 0.5);
 		@extend %button-properties;
 		&:hover,
 		&:focus {
-			color: #032529;
+			color: #fff;
 		}
 	}
 	.raise:hover,
@@ -88,12 +89,11 @@ $colors: (
 
 @media screen and (max-width:767px) {
 %buttons-mdl {
-	font-weight: 400;
+	font-weight: 500;
 	padding: 12px 24px;
 }
 	.backImg {
-		min-height: 65vh;
-		padding-top: 80px;
+		min-height: 78vh;
 		.raise {
 			@extend %buttons-mdl;
 		}
@@ -112,12 +112,11 @@ $colors: (
 
 @media screen and (max-width:480px) {
 %buttons-sml {
-	font-weight: 400;
+	font-weight: 450;
 	padding: 10px 20px;
 }
 	.backImg {
-		min-height: 60vh;
-		padding-top: 50px;
+		min-height: 83vh;
 		.raise {
 			@extend %buttons-sml;
 		}
