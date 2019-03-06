@@ -20,7 +20,7 @@ class Home extends Component{
 				<div class="center">
 					<h3 class="marquee"><span>I design and code beautifully simple things, and I love what I do.</span></h3>
 				</div>
-				<Scrollchor className="raise" to="two" >{this.props.button}</Scrollchor>
+				<Scrollchor className="raise" to="about" >{this.props.button}</Scrollchor>
 			</div>
 		);
 	}

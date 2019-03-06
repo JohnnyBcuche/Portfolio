@@ -6,6 +6,7 @@ $red: #C83737;
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 80%;
+	padding-top: 10%;
 	.glitch {
 	    animation: glitch-skew 4s cubic-bezier(.25, .46, .45, .94) 4s infinite;
 	    font-size: 40px;
@@ -116,7 +117,7 @@ $red: #C83737;
 	}
 }
 .center {
-	margin: 70px auto 85px auto;
+	margin: 7% auto 6% auto;
 	padding: 20px 10px;
 	background-color: rgba(200, 55, 55, 0.5);	
 	color: $white;
@@ -145,6 +146,7 @@ $red: #C83737;
 @media screen and (max-width:767px) {
 	.intraduction {
 		font-weight: 600;
+		padding-top: 25%;
 		.glitch {
 			font-size: 35px;
 		}

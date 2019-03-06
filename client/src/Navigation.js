@@ -16,18 +16,18 @@ class Navigation extends Component {
 
         <ul className="navigation">
         <h2><p>{this.props.logoTitle}</p></h2>
-          <li><Scrollchor to="one" ><p>Home</p></Scrollchor></li>
-          <li><Scrollchor to="two" ><p>About</p></Scrollchor></li>
-          <li><Scrollchor to="three" ><p>My Projects</p></Scrollchor></li>
-          <li><Scrollchor to="four" ><p>Contact</p></Scrollchor></li>
+          <li><Scrollchor to="home" ><p>Home</p></Scrollchor></li>
+          <li><Scrollchor to="about" ><p>About</p></Scrollchor></li>
+          <li><Scrollchor to="my_projects" ><p>My Projects</p></Scrollchor></li>
+          <li><Scrollchor to="contact" ><p>Contact</p></Scrollchor></li>
         </ul>
 
       </nav>
 
-      <div id="one"><Home title="Hi, my name is Ivan and i'm a web developer." button="About me"/></div>
-      <div id="two"><About /></div>
-      <div id="three"><MyProjects /></div>
-      <div id="four"><Contact /></div>
+      <div id="home"><Home title="Hi, my name is Ivan and i'm a web developer." button="About me"/></div>
+      <div id="about"><About /></div>
+      <div id="my_projects"><MyProjects /></div>
+      <div id="contact"><Contact /></div>
 
     </div>
     );

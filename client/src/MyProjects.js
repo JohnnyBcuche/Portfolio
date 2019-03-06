@@ -21,7 +21,7 @@ class MyWork extends Component{
 					<Icons myIcon={iconObj[1].icon} myTitle={iconObj[1].title} myDescription={iconObj[1].description} />
 				</div>
 
-				<Scrollchor className="fill" to="four" >Contact me</Scrollchor>
+				<Scrollchor className="fill" to="contact" >Contact me</Scrollchor>
 			</div>
 		);
 	}

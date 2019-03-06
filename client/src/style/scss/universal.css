@@ -34,8 +34,7 @@
   background-image: url(../../img/developer.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 100px;
-  min-height: 85vh; }
+  min-height: 94vh; }
   .backImg .raise {
     display: inline-block;
     background-color: rgba(200, 55, 55, 0.5); }
@@ -72,6 +71,6 @@
     padding: 10px 20px; }
 
   .backImg {
-    min-height: 83vh; } }
+    min-height: 93vh; } }
 
 /*# sourceMappingURL=universal.css.map */

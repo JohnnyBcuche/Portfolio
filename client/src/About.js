@@ -18,7 +18,7 @@ class About extends Component{
 						naturally curious, and perpetually improving my skills and knowledge. Feel free to check out my <a href="https://github.com/JohnnyBcuche" rel="noopener noreferrer" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/ivan-ki%C5%A1-187647145/" rel="noopener noreferrer" target="_blank">LinkedIn</a> profiles to see more about me and my work.
 					</p>
 				</div>
-				<Scrollchor className="pulse" to="three">Go to my projects</Scrollchor>
+				<Scrollchor className="pulse" to="my_projects">Go to my projects</Scrollchor>
 			</div>
 			
 		);
